@@ -1,38 +1,60 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Play Video</title>
 
+<style>
+body{
+    background:#111;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    flex-direction:column;
+    font-family:Arial,sans-serif;
+}
 
-
-
-  <style>
-    body{
-      font-family:Arial;
-      text-align:center;
-      padding-top:100px;
-    }
-  </style>
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+button{
+    padding:15px 30px;
+    font-size:20px;
+    background:#ff0000;
+    color:#fff;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+}
+</style>
 </head>
-
 <body>
 
-<h2>Video is playing...</h2>
+<!-- Script iklan -->
+<div id="ads">
+    <script data-cfasync="false" async type="text/javascript" src="//eq.hoggiesatieno.com/tjYtgNBL7HjxozlE8/137861"></script>
+</div>
 
+<br>
 
+<button onclick="playVideo()">▶ Play Video</button>
+
+<video id="video" width="720" controls style="display:none;margin-top:20px;">
+    <source src="video.mp4" type="video/mp4">
+    Browser Anda tidak mendukung video.
+</video>
 
 <script>
-setTimeout(function(){
-    window.location.href = "https://jonasfrozepyjamas.com/bbic2g3rw?key=fc09e134f903a99b2004fa793fcd4107";
-}, 500);
+function playVideo() {
+    const video = document.getElementById("video");
+    video.style.display = "block";
+    video.play();
+}
 </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"5b8be24f132a4733b11e2f2ef45d1e27","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-</body>
-</html>
-
-
-<!-- Histats.com  START  (aync)-->
+   <!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,4810542,4,511,95,18,00000000']);
+_Hasync.push(['Histats.start', '1,4626895,4,0,0,0,00010000']);
 _Hasync.push(['Histats.fasi', '1']);
 _Hasync.push(['Histats.track_hits', '']);
 (function() {
@@ -40,5 +62,7 @@ var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async
 hs.src = ('//s10.histats.com/js15_as.js');
 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
 })();</script>
-<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4810542&101" alt="web page hit counter" border="0"></a></noscript>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4626895&101" alt="" border="0"></a></noscript>
 <!-- Histats.com  END  -->
+</body>
+</html>
